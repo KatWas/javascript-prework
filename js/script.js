@@ -1,33 +1,13 @@
 //computer
 let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-console.log('Wylosowana liczba to: ' + randomNumber);
-
 let computerMove = 'nieznany ruch';
 
-if(randomNumber == 1){
+if(randomNumber == 1) {
   computerMove = 'kamień';
 }
-
-printMessage('Mój ruch to: ' + computerMove);
-
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-console.log('Wylosowana liczba to: ' + randomNumber);
-
-let computerMove = 'nieznany ruch';
-
 if(randomNumber == 2){
   computerMove = 'papier';
 }
-
-printMessage('Mój ruch to: ' + computerMove);
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-console.log('Wylosowana liczba to: ' + randomNumber);
-
-let computerMove = 'nieznany ruch';
-
 if(randomNumber == 3){
   computerMove = 'nożyce';
 }
@@ -41,10 +21,15 @@ console.log('Gracz wpisał: ' + playerInput);
 
 let playerMove = 'nieznany ruch';
 
-if(playerInput == ''){
-  playerMove = '';
+if(playerInput == 1) {
+  playerMove = 'kamień';
 }
-
+if(playerInput == 2){
+  playerMove = 'papier';
+}
+if(playerInput == 3){
+  playerMove = 'nożyce';
+}
 
 //wynik
 
@@ -77,16 +62,3 @@ if( computerMove == 'papier' && playerMove == 'nożyce'){
 if( computerMove == 'nożyce' && playerMove == 'nożyce'){
     printMessage('Remis!');
   } 
-  
-//nieznany ruch  
-let randomNumber = Math.floor(Math.random() * 3 + 1);
-
-console.log('Wylosowana liczba to: ' + randomNumber);
-
-let computerMove = 'nieznany ruch';
-
-if(randomNumber == 1){
-  computerMove = 'kamień';
-}
-
-printMessage('Mój ruch to: ' + computerMove);
