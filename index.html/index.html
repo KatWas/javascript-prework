@@ -3,12 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<header class="splash">
+        <div class="container">
+            <h1 class="page-title">Gra: Papier - Kamień - Nożyce</h1>
+            <h2 class="page-subtitle">Zapraszam do gry!</h2>
+        </div>
+    </header>
 	<div class="container">
-		<div id="buttons"></div>
-		<div id="messages">printMessage('Zagrałem kamień! Jeśli Twój ruch to papier, to wygrywasz!');</div>
+		<div id="buttons">
+			<button type="button" id="button-rock">Kamień</button>
+			<button type="button" id="button-paper">Papier</button>
+			<button type="button" id="button-scissors">Nożyce</button>
+		</div>
+		<div class="result">
+			<p>WYNIK:</p>
+		</div>
+		<div id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
